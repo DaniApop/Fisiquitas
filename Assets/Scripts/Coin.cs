@@ -11,12 +11,5 @@ public class Coin : MonoBehaviour
         coinManager = FindObjectOfType<CoinManager>();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ball"))
-        {
-            coinManager.CoinHit();
-            Destroy(gameObject);
-        }
-    }
+
 }

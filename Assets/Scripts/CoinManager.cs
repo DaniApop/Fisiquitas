@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
     public GameObject Coin;
-    public float spawnInterval = 2f;
+    public float spawnInterval = 0f;
     public float despawnTime = 5f;
     public int maxCoins = 3;
 
@@ -40,8 +40,5 @@ public class CoinManager : MonoBehaviour
         // Destroy the coin after the despawn time if it is not hit
         Destroy(coin, despawnTime);
     }
-    public void CoinHit()
-    {
-        coinsOnScreen--;
-    }
+ 
 }
