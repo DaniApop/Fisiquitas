@@ -27,7 +27,6 @@ public class Parebola : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
-            Debug.Log("piuuu");
         }
 
         LaunchAngle = AngleSlider.value;
